@@ -34,8 +34,24 @@
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
+				Tests/cronTests.swift,
+				Tests/cronUITests.swift,
 			);
 			target = 08ADEB482FCD3BDB0017B592 /* cron */;
+		};
+		08ADEC732FCD519A0017B592 /* Exceptions for "cron" folder in "cronTests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/cronTests.swift,
+			);
+			target = 08ADEB552FCD3BDD0017B592 /* cronTests */;
+		};
+		08ADEC742FCD519D0017B592 /* Exceptions for "cron" folder in "cronUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Tests/cronUITests.swift,
+			);
+			target = 08ADEB5F2FCD3BDD0017B592 /* cronUITests */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
@@ -44,18 +60,10 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				08ADEB742FCD41D40017B592 /* Exceptions for "cron" folder in "cron" target */,
+				08ADEC732FCD519A0017B592 /* Exceptions for "cron" folder in "cronTests" target */,
+				08ADEC742FCD519D0017B592 /* Exceptions for "cron" folder in "cronUITests" target */,
 			);
 			path = cron;
-			sourceTree = "<group>";
-		};
-		08ADEB592FCD3BDD0017B592 /* cronTests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = cronTests;
-			sourceTree = "<group>";
-		};
-		08ADEB632FCD3BDD0017B592 /* cronUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = cronUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -89,8 +97,6 @@
 			isa = PBXGroup;
 			children = (
 				08ADEB4B2FCD3BDB0017B592 /* cron */,
-				08ADEB592FCD3BDD0017B592 /* cronTests */,
-				08ADEB632FCD3BDD0017B592 /* cronUITests */,
 				08ADEB4A2FCD3BDB0017B592 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,9 +149,6 @@
 			dependencies = (
 				08ADEB582FCD3BDD0017B592 /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				08ADEB592FCD3BDD0017B592 /* cronTests */,
-			);
 			name = cronTests;
 			packageProductDependencies = (
 			);
@@ -165,9 +168,6 @@
 			);
 			dependencies = (
 				08ADEB622FCD3BDD0017B592 /* PBXTargetDependency */,
-			);
-			fileSystemSynchronizedGroups = (
-				08ADEB632FCD3BDD0017B592 /* cronUITests */,
 			);
 			name = cronUITests;
 			packageProductDependencies = (
