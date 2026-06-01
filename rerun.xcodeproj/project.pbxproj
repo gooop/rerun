@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		08ADEC982FCD53FB0017B592 /* librerunLib.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 08ADEC872FCD53DB0017B592 /* librerunLib.dylib */; };
+		08ADECB52FCD55180017B592 /* librerunLib.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 08ADECA22FCD54F60017B592 /* librerunLib.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,11 +25,11 @@
 			remoteGlobalIDString = 08ADEB482FCD3BDB0017B592;
 			remoteInfo = rerun;
 		};
-		08ADEC992FCD53FB0017B592 /* PBXContainerItemProxy */ = {
+		08ADECB62FCD55180017B592 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 08ADEB412FCD3BDB0017B592 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 08ADEC862FCD53DB0017B592;
+			remoteGlobalIDString = 08ADECA12FCD54F60017B592;
 			remoteInfo = rerunLib;
 		};
 /* End PBXContainerItemProxy section */
@@ -38,8 +38,8 @@
 		08ADEB492FCD3BDB0017B592 /* rerun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rerun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08ADEB562FCD3BDD0017B592 /* rerunTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rerunTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08ADEB602FCD3BDD0017B592 /* rerunUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rerunUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		08ADEC872FCD53DB0017B592 /* librerunLib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = librerunLib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
-		08ADEC942FCD53FB0017B592 /* rerunLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rerunLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08ADECA22FCD54F60017B592 /* librerunLib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = librerunLib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		08ADECB12FCD55180017B592 /* rerunLibTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rerunLibTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -66,6 +66,13 @@
 			);
 			target = 08ADEB5F2FCD3BDD0017B592 /* rerunUITests */;
 		};
+		08ADECC02FCD55430017B592 /* Exceptions for "rerunLib" folder in "rerunLib" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Sources/rerunLib-Bridging-Header.h",
+			);
+			target = 08ADECA12FCD54F60017B592 /* rerunLib */;
+		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -77,6 +84,19 @@
 				08ADEC742FCD519D0017B592 /* Exceptions for "rerun" folder in "rerunUITests" target */,
 			);
 			path = rerun;
+			sourceTree = "<group>";
+		};
+		08ADECA32FCD54F60017B592 /* rerunLib */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				08ADECC02FCD55430017B592 /* Exceptions for "rerunLib" folder in "rerunLib" target */,
+			);
+			path = rerunLib;
+			sourceTree = "<group>";
+		};
+		08ADECB22FCD55180017B592 /* rerunLibTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = rerunLibTests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -103,18 +123,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		08ADEC852FCD53DB0017B592 /* Frameworks */ = {
+		08ADECA02FCD54F60017B592 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		08ADEC912FCD53FB0017B592 /* Frameworks */ = {
+		08ADECAE2FCD55180017B592 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				08ADEC982FCD53FB0017B592 /* librerunLib.dylib in Frameworks */,
+				08ADECB52FCD55180017B592 /* librerunLib.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +145,8 @@
 			isa = PBXGroup;
 			children = (
 				08ADEB4B2FCD3BDB0017B592 /* rerun */,
+				08ADECA32FCD54F60017B592 /* rerunLib */,
+				08ADECB22FCD55180017B592 /* rerunLibTests */,
 				08ADEB4A2FCD3BDB0017B592 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -135,8 +157,8 @@
 				08ADEB492FCD3BDB0017B592 /* rerun.app */,
 				08ADEB562FCD3BDD0017B592 /* rerunTests.xctest */,
 				08ADEB602FCD3BDD0017B592 /* rerunUITests.xctest */,
-				08ADEC872FCD53DB0017B592 /* librerunLib.dylib */,
-				08ADEC942FCD53FB0017B592 /* rerunLibTests.xctest */,
+				08ADECA22FCD54F60017B592 /* librerunLib.dylib */,
+				08ADECB12FCD55180017B592 /* rerunLibTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -144,7 +166,7 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		08ADEC832FCD53DB0017B592 /* Headers */ = {
+		08ADEC9E2FCD54F60017B592 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -216,43 +238,49 @@
 			productReference = 08ADEB602FCD3BDD0017B592 /* rerunUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		08ADEC862FCD53DB0017B592 /* rerunLib */ = {
+		08ADECA12FCD54F60017B592 /* rerunLib */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 08ADEC8F2FCD53DB0017B592 /* Build configuration list for PBXNativeTarget "rerunLib" */;
+			buildConfigurationList = 08ADECA82FCD54F60017B592 /* Build configuration list for PBXNativeTarget "rerunLib" */;
 			buildPhases = (
-				08ADEC832FCD53DB0017B592 /* Headers */,
-				08ADEC842FCD53DB0017B592 /* Sources */,
-				08ADEC852FCD53DB0017B592 /* Frameworks */,
+				08ADEC9E2FCD54F60017B592 /* Headers */,
+				08ADEC9F2FCD54F60017B592 /* Sources */,
+				08ADECA02FCD54F60017B592 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				08ADECA32FCD54F60017B592 /* rerunLib */,
 			);
 			name = rerunLib;
 			packageProductDependencies = (
 			);
 			productName = rerunLib;
-			productReference = 08ADEC872FCD53DB0017B592 /* librerunLib.dylib */;
+			productReference = 08ADECA22FCD54F60017B592 /* librerunLib.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
-		08ADEC932FCD53FB0017B592 /* rerunLibTests */ = {
+		08ADECB02FCD55180017B592 /* rerunLibTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 08ADEC9B2FCD53FB0017B592 /* Build configuration list for PBXNativeTarget "rerunLibTests" */;
+			buildConfigurationList = 08ADECB82FCD55180017B592 /* Build configuration list for PBXNativeTarget "rerunLibTests" */;
 			buildPhases = (
-				08ADEC902FCD53FB0017B592 /* Sources */,
-				08ADEC912FCD53FB0017B592 /* Frameworks */,
-				08ADEC922FCD53FB0017B592 /* Resources */,
+				08ADECAD2FCD55180017B592 /* Sources */,
+				08ADECAE2FCD55180017B592 /* Frameworks */,
+				08ADECAF2FCD55180017B592 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				08ADEC9A2FCD53FB0017B592 /* PBXTargetDependency */,
+				08ADECB72FCD55180017B592 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				08ADECB22FCD55180017B592 /* rerunLibTests */,
 			);
 			name = rerunLibTests;
 			packageProductDependencies = (
 			);
 			productName = rerunLibTests;
-			productReference = 08ADEC942FCD53FB0017B592 /* rerunLibTests.xctest */;
+			productReference = 08ADECB12FCD55180017B592 /* rerunLibTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -276,10 +304,11 @@
 						CreatedOnToolsVersion = 26.2;
 						TestTargetID = 08ADEB482FCD3BDB0017B592;
 					};
-					08ADEC862FCD53DB0017B592 = {
+					08ADECA12FCD54F60017B592 = {
 						CreatedOnToolsVersion = 26.2;
+						LastSwiftMigration = 2620;
 					};
-					08ADEC932FCD53FB0017B592 = {
+					08ADECB02FCD55180017B592 = {
 						CreatedOnToolsVersion = 26.2;
 					};
 				};
@@ -301,8 +330,8 @@
 				08ADEB482FCD3BDB0017B592 /* rerun */,
 				08ADEB552FCD3BDD0017B592 /* rerunTests */,
 				08ADEB5F2FCD3BDD0017B592 /* rerunUITests */,
-				08ADEC862FCD53DB0017B592 /* rerunLib */,
-				08ADEC932FCD53FB0017B592 /* rerunLibTests */,
+				08ADECA12FCD54F60017B592 /* rerunLib */,
+				08ADECB02FCD55180017B592 /* rerunLibTests */,
 			);
 		};
 /* End PBXProject section */
@@ -329,7 +358,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		08ADEC922FCD53FB0017B592 /* Resources */ = {
+		08ADECAF2FCD55180017B592 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -360,14 +389,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		08ADEC842FCD53DB0017B592 /* Sources */ = {
+		08ADEC9F2FCD54F60017B592 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		08ADEC902FCD53FB0017B592 /* Sources */ = {
+		08ADECAD2FCD55180017B592 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -387,10 +416,10 @@
 			target = 08ADEB482FCD3BDB0017B592 /* rerun */;
 			targetProxy = 08ADEB612FCD3BDD0017B592 /* PBXContainerItemProxy */;
 		};
-		08ADEC9A2FCD53FB0017B592 /* PBXTargetDependency */ = {
+		08ADECB72FCD55180017B592 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 08ADEC862FCD53DB0017B592 /* rerunLib */;
-			targetProxy = 08ADEC992FCD53FB0017B592 /* PBXContainerItemProxy */;
+			target = 08ADECA12FCD54F60017B592 /* rerunLib */;
+			targetProxy = 08ADECB62FCD55180017B592 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -661,9 +690,10 @@
 			};
 			name = Release;
 		};
-		08ADEC8D2FCD53DB0017B592 /* Debug */ = {
+		08ADECA92FCD54F60017B592 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S76FF4PW5J;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -671,12 +701,16 @@
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "rerunLib/Sources/rerunLib-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
-		08ADEC8E2FCD53DB0017B592 /* Release */ = {
+		08ADECAA2FCD54F60017B592 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S76FF4PW5J;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -684,10 +718,12 @@
 				EXECUTABLE_PREFIX = lib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "rerunLib/Sources/rerunLib-Bridging-Header.h";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Release;
 		};
-		08ADEC9C2FCD53FB0017B592 /* Debug */ = {
+		08ADECB92FCD55180017B592 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -705,7 +741,7 @@
 			};
 			name = Debug;
 		};
-		08ADEC9D2FCD53FB0017B592 /* Release */ = {
+		08ADECBA2FCD55180017B592 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
@@ -762,20 +798,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		08ADEC8F2FCD53DB0017B592 /* Build configuration list for PBXNativeTarget "rerunLib" */ = {
+		08ADECA82FCD54F60017B592 /* Build configuration list for PBXNativeTarget "rerunLib" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				08ADEC8D2FCD53DB0017B592 /* Debug */,
-				08ADEC8E2FCD53DB0017B592 /* Release */,
+				08ADECA92FCD54F60017B592 /* Debug */,
+				08ADECAA2FCD54F60017B592 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		08ADEC9B2FCD53FB0017B592 /* Build configuration list for PBXNativeTarget "rerunLibTests" */ = {
+		08ADECB82FCD55180017B592 /* Build configuration list for PBXNativeTarget "rerunLibTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				08ADEC9C2FCD53FB0017B592 /* Debug */,
-				08ADEC9D2FCD53FB0017B592 /* Release */,
+				08ADECB92FCD55180017B592 /* Debug */,
+				08ADECBA2FCD55180017B592 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
